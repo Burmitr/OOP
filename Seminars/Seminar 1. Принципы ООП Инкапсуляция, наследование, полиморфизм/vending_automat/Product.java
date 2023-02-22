@@ -45,5 +45,10 @@ public class Product {
     public void setCost(int cost) {
         this.cost = cost;
     }
-    
+
+    @Override
+    public String toString() {
+        return String.format("Наименование товара - %s. Цена: %d", name, cost);
+
+    }
 }
